@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.pgg.icookapp.view.CircleImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/face_normal"
+        android:id="@+id/iv_inter_icon"/>
+
+    <TextView
+        android:id="@+id/tv_inter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="彭港归"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_inter_icon"/>
+
+    <TextView
+        android:id="@+id/tv_inter_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android开发工程师"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:textColor="#d81e06"
+        android:layout_below="@id/tv_inter_name"
+        android:layout_toRightOf="@id/iv_inter_icon"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_inter_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西安邮电大学"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:textColor="#8000"
+        android:layout_below="@id/tv_inter_job"
+        android:layout_toRightOf="@id/iv_inter_icon"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_inter_major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信息管理与信息系统"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:textColor="#8000"
+        android:layout_below="@id/tv_inter_job"
+        android:layout_toRightOf="@id/tv_inter_school"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_right"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1296db">
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:cursorVisible="false"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:background="@drawable/btn_normal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:hint="搜索职位/公司"
+            android:drawableLeft="@drawable/icon_search_act"/>
+
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"/>
+
+        <ImageButton
+            android:id="@+id/iv_add_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+        <ImageButton
+            android:id="@+id/iv_left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomRadioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_button_selector"
+            android:text="首页"
+            android:textColor="@drawable/txt_tab_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_call"
+            style="@style/BottomRadioButtonStyle"
+            android:drawableTop="@drawable/tab_call_button_selector"
+            android:text="通讯录"
+            android:textColor="@drawable/txt_tab_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/BottomRadioButtonStyle"
+            android:drawableTop="@drawable/tab_message_button_selector"
+            android:text="消息"
+            android:textColor="@drawable/txt_tab_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/BottomRadioButtonStyle"
+            android:drawableTop="@drawable/tab_me_button_selector"
+            android:text="我的"
+            android:textColor="@drawable/txt_tab_selector" />
+
+    </RadioGroup>
+
+</LinearLayout>

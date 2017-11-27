@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/btn_selector"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hopejob_name"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:text="【毕业时间】："/>
+    <TextView
+        android:id="@+id/tv_gtime_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018年"
+        android:textSize="@dimen/base_des"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/tv_hopejob_name"/>
+
+    <TextView
+        android:id="@+id/tv_teach_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#1296db"
+        android:drawablePadding="5dp"
+        android:textSize="20dp"
+        android:text="编辑"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/edit_btn"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hopejob_des"
+        android:layout_marginTop="10dp"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:layout_below="@id/tv_hopejob_name"
+        android:text="【毕业院校】："/>
+
+    <TextView
+        android:id="@+id/tv_school_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="西安邮电大学"
+        android:textSize="@dimen/base_des"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/tv_hopejob_des"
+        android:layout_below="@id/tv_gtime_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hopejob_add"
+        android:layout_marginTop="10dp"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:layout_below="@id/tv_hopejob_des"
+        android:text="【学历专业】："/>
+
+    <TextView
+        android:id="@+id/tv_grade_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="本科-信息管理与信息系统"
+        android:textSize="@dimen/base_des"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/tv_hopejob_add"
+        android:layout_below="@id/tv_school_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_exp_des"
+        android:layout_marginTop="10dp"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:layout_below="@id/tv_hopejob_add"
+        android:text="【专业特长】："/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_major_des"
+        android:textSize="@dimen/base_des"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_below="@id/tv_exp_des"
+        android:text="Android开发测试"/>
+</RelativeLayout>

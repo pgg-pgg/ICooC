@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.pgg.icookapp.view.CircleImageView
+            android:id="@+id/iv_face_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/face_normal" />
+
+        <TextView
+            android:id="@+id/tv_name_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_face_content"
+            android:textColor="#fff"
+            android:text="胖哥哥飘过"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_signature_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="#1afa29"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/iv_face_content"
+        android:text="一直被模仿，从未被超越！"
+        android:ellipsize="end"
+        android:drawableRight="@drawable/edit"/>
+
+
+    <ListView
+        android:id="@+id/list_left_menu"
+        android:layout_marginTop="60dp"
+        android:dividerHeight="10dp"
+        android:divider="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

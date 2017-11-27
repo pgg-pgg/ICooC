@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/btn_selector"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_work_time_title"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:text="【工作时间】："/>
+    <TextView
+        android:id="@+id/tv_work_time_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-5~2016-5"
+        android:textSize="@dimen/base_des"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/tv_work_time_title"/>
+
+    <TextView
+        android:id="@+id/tv_work_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#1296db"
+        android:drawablePadding="5dp"
+        android:textSize="20dp"
+        android:text="编辑"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/edit_btn"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_work_company_title"
+        android:layout_marginTop="10dp"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:layout_below="@id/tv_work_time_title"
+        android:text="【入职公司】："/>
+
+    <TextView
+        android:id="@+id/tv_work_company_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="百度"
+        android:textSize="@dimen/base_des"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/tv_work_company_title"
+        android:layout_below="@id/tv_work_time_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_work_position_title"
+        android:layout_marginTop="10dp"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:layout_below="@id/tv_work_company_title"
+        android:text="【入职职位】："/>
+
+    <TextView
+        android:id="@+id/tv_work_position_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Android开发"
+        android:textSize="@dimen/base_des"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/tv_work_company_title"
+        android:layout_below="@id/tv_work_company_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_work_content_title"
+        android:layout_marginTop="10dp"
+        android:textColor="#666"
+        android:textSize="@dimen/base_des"
+        android:layout_below="@id/tv_work_position_title"
+        android:text="【入职内容】："/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_work_content"
+        android:textSize="@dimen/base_des"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_below="@id/tv_work_content_title"
+        android:text="这是一个为大学生就业困难而生的平台！"/>
+
+</RelativeLayout>

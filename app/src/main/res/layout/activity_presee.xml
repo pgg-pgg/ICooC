@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl_title"
+        android:background="#1296db">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_left"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="职位详情"
+            android:textSize="20dp"
+            android:textColor="#fff" />
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="#fff"
+            android:background="@drawable/bg_tab_text"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#cecece"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_selector">
+
+                <TextView
+                    android:id="@+id/tv_presee_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本信息"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:padding="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_presee_info"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_selector">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_presee_name_title"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:text="姓  名："/>
+                    <TextView
+                        android:id="@+id/tv_base_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="彭港归"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_presee_name_title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_presee_sex_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_presee_name_title"
+                        android:text="性  别："/>
+
+                    <TextView
+                        android:id="@+id/tv_presee_sex_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="男"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_presee_name_title"
+                        android:layout_below="@id/tv_base_name"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_presee_birth_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_presee_sex_title"
+                        android:text="出生年月："/>
+
+                    <TextView
+                        android:id="@+id/tv_presee_birth_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="1997-3-6"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_presee_birth_title"
+                        android:layout_below="@id/tv_presee_sex_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_presee_grade_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_presee_birth_title"
+                        android:text="当前学籍："/>
+
+                    <TextView
+                        android:id="@+id/tv_presee_grade_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="大三"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_presee_grade_title"
+                        android:layout_below="@id/tv_presee_birth_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_presee_phone_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_presee_grade_title"
+                        android:text="联系方式："/>
+
+                    <TextView
+                        android:id="@+id/tv_presee_phone_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="18829591066"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_presee_phone_title"
+                        android:layout_below="@id/tv_presee_grade_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_presee_email_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_presee_phone_title"
+                        android:text="联系邮箱："/>
+
+                    <TextView
+                        android:id="@+id/tv_presee_email_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="979150046@qq.com"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_presee_email_title"
+                        android:layout_below="@id/tv_presee_phone_content"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_selector">
+
+                <TextView
+                    android:id="@+id/tv_presee_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="项目经历"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:padding="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_presee_exp"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_selector">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_exp_time_title"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:text="【项目时间】："/>
+                    <TextView
+                        android:id="@+id/tv_exp_time_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016-5-6~至今"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_exp_time_title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_exp_name_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_exp_time_title"
+                        android:text="【项目名称】："/>
+
+                    <TextView
+                        android:id="@+id/tv_exp_name_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="ICooC项目"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_exp_name_title"
+                        android:layout_below="@id/tv_exp_time_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_exp_duty_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_exp_name_title"
+                        android:text="【项目职责】："/>
+
+                    <TextView
+                        android:id="@+id/tv_exp_duty_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Android客户端开发"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_exp_duty_title"
+                        android:layout_below="@id/tv_exp_name_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_project_des"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_exp_duty_title"
+                        android:text="【项目描述】："/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_major_des"
+                        android:textSize="@dimen/base_des"
+                        android:textColor="#666"
+                        android:padding="5dp"
+                        android:layout_below="@id/tv_project_des"
+                        android:text="这是一个为大学生就业困难而生的平台！"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_selector">
+
+                <TextView
+                    android:id="@+id/tv_teach_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教育经历"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:padding="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_teach_exp"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_selector">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_gradute_time"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:text="【毕业时间】："/>
+                    <TextView
+                        android:id="@+id/tv_gradute_time_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2018年"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_gradute_time"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_graduate_school"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_gradute_time"
+                        android:text="【毕业院校】："/>
+
+                    <TextView
+                        android:id="@+id/tv_school_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="西安邮电大学"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_graduate_school"
+                        android:layout_below="@id/tv_gradute_time_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_hopejob_add"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_graduate_school"
+                        android:text="【学历专业】："/>
+
+                    <TextView
+                        android:id="@+id/tv_grade_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="本科-信息管理与信息系统"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_hopejob_add"
+                        android:layout_below="@id/tv_school_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_exp_des"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_hopejob_add"
+                        android:text="【专业特长】："/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_major_good"
+                        android:textSize="@dimen/base_des"
+                        android:textColor="#666"
+                        android:padding="5dp"
+                        android:layout_below="@id/tv_exp_des"
+                        android:text="Android开发测试"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_selector">
+
+                <TextView
+                    android:id="@+id/tv_hope_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="期望工作"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:padding="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_hope_job"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_selector">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_hopejob_name"
+                        android:textColor="#000"
+                        android:textSize="@dimen/base_des"
+                        android:text="Android开发工程师"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_hopejob_des"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_hopejob_name"
+                        android:text="实习/西安/15k-20k"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_hope_job_add"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_hopejob_des"
+                        android:text="Android开发测试"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_selector">
+
+                <TextView
+                    android:id="@+id/tv_work_exp_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工作经历"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:padding="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_work_exp_title"
+                    android:padding="10dp"
+                    android:background="@drawable/btn_selector">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_prework_time_title"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:text="【工作时间】："/>
+                    <TextView
+                        android:id="@+id/tv_prework_time_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-5~2016-5"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_prework_time_title"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_prework_company_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_prework_time_title"
+                        android:text="【入职公司】："/>
+
+                    <TextView
+                        android:id="@+id/tv_prework_company_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="百度"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_prework_company_title"
+                        android:layout_below="@id/tv_prework_time_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_prework_position_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_prework_company_title"
+                        android:text="【入职职位】："/>
+
+                    <TextView
+                        android:id="@+id/tv_prework_position_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Android开发工程师"
+                        android:textSize="@dimen/base_des"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#666"
+                        android:layout_toRightOf="@id/tv_prework_position_title"
+                        android:layout_below="@id/tv_prework_company_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_prework_content_title"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#666"
+                        android:textSize="@dimen/base_des"
+                        android:layout_below="@id/tv_prework_position_title"
+                        android:text="【入职内容】："/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_prework_content"
+                        android:textSize="@dimen/base_des"
+                        android:textColor="#666"
+                        android:padding="5dp"
+                        android:layout_below="@id/tv_prework_content_title"
+                        android:text="Android开发测试"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

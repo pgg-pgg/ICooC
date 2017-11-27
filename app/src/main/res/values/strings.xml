@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IcoocApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="myinfo">
+        <item>头像</item>
+        <item>姓名</item>
+        <item>手机号</item>
+        <item>我的学校</item>
+        <item>我的专业</item>
+        <item>性别</item>
+        <item>意向行业</item>
+        <item>个性签名</item>
+    </string-array>
+</resources>

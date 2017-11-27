@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#87ceeb">
+
+        <TextView
+            android:id="@+id/tv_job_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司详情"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <ImageButton
+            android:id="@+id/btn_comp_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/item_left" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <com.pgg.icookapp.view.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_default"
+                    android:id="@+id/iv_info_comp_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_info_comp_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="北京百度网讯科技有限公司"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_info_comp_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_comp_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="西安"
+                    android:layout_below="@id/tv_info_comp_name"
+                    android:layout_toRightOf="@id/iv_info_comp_icon"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#8000"/>
+
+                <TextView
+                    android:id="@+id/tv_info_comp_financingType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上市公司"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#8000"
+                    android:layout_below="@id/tv_comp_city"
+                    android:layout_toRightOf="@id/iv_info_comp_icon"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:id="@+id/tv_info_comp_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000人以上"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#8000"
+                    android:layout_below="@id/tv_comp_city"
+                    android:layout_toRightOf="@id/tv_info_comp_financingType"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_info_comp_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="计算机/互联网"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#8000"
+                    android:layout_below="@id/tv_comp_city"
+                    android:layout_toRightOf="@id/tv_info_comp_scale"
+                    android:layout_marginTop="5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/item_right"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公司介绍"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/comp_detail"
+                    android:drawablePadding="5dp"
+                    android:layout_marginLeft="10dp"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cecece"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+                <TextView
+                    android:id="@+id/tv_comp_des"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#8000"
+                    android:lineSpacingExtra="10dp"
+                    android:layout_width="match_parent"
+                    android:text="详细介绍："
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公司地址"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/comp_location"
+                    android:drawablePadding="5dp"
+                    android:layout_marginLeft="10dp"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cecece"/>
+
+            <TextView
+                android:id="@+id/tv_comp_location"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="#8000"
+                android:lineSpacingExtra="10dp"
+                android:layout_width="match_parent"
+                android:text="中国杭州市余杭区文一西路969号(311121)"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edit_register_phone"
+            android:phoneNumber="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/register_phonenum"
+            android:hint="手机号"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/edit_register_sure"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/identitying_code"
+                android:hint="请输入验证码"
+                android:digits="1234567890"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_normal"
+                android:textColor="#666"/>
+
+            <Button
+                android:id="@+id/btn_get_sure"
+                android:background="@drawable/btn_login_selector"
+                android:layout_weight="1"
+                android:text="获取验证码"
+                android:textSize="12sp"
+                android:textColor="#fff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edit_register_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/register_pwd"
+            android:hint="密码"
+            android:password="true"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edit_register_pwd_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/register_pwd_sure"
+            android:hint="确认密码"
+            android:password="true"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edit_register_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/register_school"
+            android:hint="学校"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edit_register_process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/register_process"
+            android:hint="专业"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_register_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_login_selector"
+        android:textColor="#fff"
+        android:text="注册"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+</LinearLayout>

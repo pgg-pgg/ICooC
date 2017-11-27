@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl_title"
+        android:background="#1296db">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_left"
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人简历"
+            android:textSize="20dp"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_prelook"
+            android:background="@drawable/btn_presee"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="基本信息"
+                    android:layout_margin="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/must_edit"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/container_basedes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:id="@+id/btn_add_basedes"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="添加基本信息"
+                    android:textColor="#458b74"
+                    android:background="#bfefff"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="项目经历"
+                    android:layout_margin="10dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/must_edit"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/container_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:id="@+id/btn_add_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="添加项目经历"
+                    android:textColor="#458b74"
+                    android:background="#bfefff"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="教育经历"
+                    android:layout_margin="10dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/must_edit"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/container_teach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:id="@+id/btn_add_teach"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="添加教育经历"
+                    android:textColor="#458b74"
+                    android:background="#bfefff"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="期望工作"
+                    android:layout_margin="10dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/must_edit"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/container_hopejob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:id="@+id/btn_add_hopejob"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="添加期望工作"
+                    android:textColor="#458b74"
+                    android:background="#bfefff"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="工作经历"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/container_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_selector"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <Button
+                    android:id="@+id/btn_add_work"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="添加工作经历"
+                    android:textColor="#458b74"
+                    android:background="#bfefff"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

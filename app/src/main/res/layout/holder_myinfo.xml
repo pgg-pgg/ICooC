@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_myinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:text="IOS高级开发工程师"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_myinfo_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="西安"
+        android:layout_marginBottom="5dp"
+        android:textColor="#8000"
+        android:textSize="10sp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/tv_myinfo_name"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/iv_location"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_myinfo_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大四"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:textSize="10sp"
+        android:textColor="#8000"
+        android:layout_below="@id/tv_myinfo_name"
+        android:layout_toRightOf="@id/tv_myinfo_location"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/iv_grade"
+        android:drawablePadding="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_myinfo_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="实习"
+        android:textSize="10sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#8000"
+        android:layout_below="@id/tv_myinfo_name"
+        android:layout_toRightOf="@id/tv_myinfo_grade"
+        android:layout_marginLeft="30dp"
+        android:drawableLeft="@drawable/iv_time"
+        android:drawablePadding="5dp"/>
+
+
+</RelativeLayout>

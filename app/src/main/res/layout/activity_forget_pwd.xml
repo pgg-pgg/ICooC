@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/splash_background"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:singleLine="true"
+            android:phoneNumber="true"
+            android:id="@+id/edit_update_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/register_phonenum"
+            android:hint="请输入注册手机号"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+        <EditText
+            android:id="@+id/edit_update_identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/identitying_code"
+            android:hint="请输入验证码"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+        <EditText
+            android:id="@+id/edit_update_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/register_pwd"
+            android:hint="请输入新密码"
+            android:password="true"
+            android:padding="10dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/btn_normal"
+            android:textColor="#666"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textSize="13sp"
+            android:textColor="#333"/>
+        <Button
+            android:id="@+id/btn_update_by_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#1296db"
+            android:textSize="13sp"
+            android:layout_marginLeft="2dp"
+            android:text="通过验证码修改密码"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_login_selector"
+        android:textColor="#fff"
+        android:text="确认修改"
+        android:textSize="18sp"
+        android:padding="10dp"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/mark"
+        android:id="@+id/rl_head_icon">
+
+        <com.pgg.icookapp.view.CircleImageView
+            android:id="@+id/iv_info_face"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/face_normal"/>
+        <ImageView
+            android:id="@+id/iv_sex_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_info_face"
+            android:layout_below="@id/iv_info_face"
+            android:src="@drawable/man_icon"/>
+
+        <TextView
+            android:id="@+id/tv_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="彭港归"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/iv_info_face"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_info_name"
+            android:id="@+id/tv_info_school"
+            android:text="西安邮电大学"
+            android:textColor="#fff" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_info_school"
+            android:id="@+id/tv_info_major"
+            android:text="信息管理与信息系统"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</LinearLayout>
